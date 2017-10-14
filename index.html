@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Contact Form</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="contact.css">
+    </head>
+    <body>
+       <form action="#" method="post">
+        <fieldset>
+          <h1>Contact Us</h1>
+          <div class="user_info">
+            
+              <label for="first_name">First Name</label>
+              <input type="text" name="first_name" id="first_name">
+
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last-name" id="last_name">
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="you@somewhere.com">
+
+              <label for="address1">Street Address</label>
+              <input type="text" name="address1" id="address1">
+
+              <label for="address2">Apt, Building, Suite #</label>
+              <input type="text" name="address2" id="address2">
+
+              <label for="city">City</label>
+              <input type="text" name="city" id="city">
+
+              <label for="state">State</label>
+              <select name="state" id="state">
+                <option selected >State</option>
+                  <option>AK</option>
+                  <option>AL</option>
+                  <option>AR</option>
+                  <option>AZ</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DC</option>
+                  <option>DE</option>
+                  <option>FL</option>
+                  <option>GA</option>
+                  <option>HI</option>
+                  <option>IA</option>
+                  <option>ID</option>
+                  <option>IL</option>
+                  <option>IN</option>
+                  <option>KS</option>
+                  <option>KY</option>
+                  <option>LA</option>
+                  <option>MA</option>
+                  <option>MD</option>
+                  <option>ME</option>
+                  <option>MI</option>
+                  <option>MN</option>
+                  <option>MO</option>
+                  <option>MS</option>
+                  <option>MT</option>
+                  <option>NC</option>
+                  <option>ND</option>
+                  <option>NE</option>
+                  <option>NH</option>
+                  <option>NJ</option>
+                  <option>NM</option>
+                  <option>NV</option>
+                  <option>NY</option>
+                  <option>OH</option>
+                  <option>OK</option>
+                  <option>OR</option>
+                  <option>PA</option>
+                  <option>RI</option>
+                  <option>SC</option>
+                  <option>SD</option>
+                  <option>TN</option>
+                  <option>TX</option>
+                  <option>UT</option>
+                  <option>VA</option>
+                  <option>VT</option>
+                  <option>WA</option>
+                  <option>WI</option>
+                  <option>WV</option>
+                  <option>WY</option>
+              </select>
+
+            <label for="zipcode">Zip Code</label>
+            <input type="text" name="zipcode" id="zipcode" maxlength="5" pattern="[0-9]{5}">
+        </div>
+
+        <div class="user_preference">
+          <label for="color">Which of these colors do you most prefer?</label>
+          <select name="color" id="color">
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+          </select>
+
+          <label for="interest">What web technologies do you want to hear more about?</label>
+          <select class="user_interest" name="interest" id="interest" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+            <option value="ruby">Ruby</option>
+            <option value="rails">Rails</option>
+          </select>
+        </div>
+
+        <div class="comments">
+          <label for="comments">Tell us what's on your mind</label>
+          <textarea name="comments" id="comments" rows="20"></textarea>
+        </div>
+
+        <input type="hidden" name="timestamp" value="2017-10-13">
+        
+
+        <div class="button">
+          <input type="reset" name="reset">
+          <input type="submit" name="submit">
+        </div>
+      </fieldset>
+      </form>
+
+    </body>
+</html>
